@@ -462,7 +462,7 @@
 							<li><a href="delivery_payment.html">Доставка и оплата</a></li>
 							<li><a href="delivery_payment.html">Возврат товара</a></li>
 							<li><a href="new_products.html">Новости</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -551,7 +551,7 @@
 						</svg>
 					</div>
 				</a>
-				<a href="#">
+				<a href="favorites.html">
 					<div class="svg_wrap">
 						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M20.84 3.61012C19.8085 2.57811 18.4091 1.99829 16.95 1.99829C15.4909 1.99829 14.0915 2.57811 13.06 3.61012L12 4.67012L10.94 3.61012C8.79161 1.46173 5.30838 1.46173 3.16 3.61012C1.01161 5.7585 1.01161 9.24173 3.16 11.3901L4.22 12.4501L12 20.2301L19.78 12.4501L20.84 11.3901C21.872 10.3586 22.4518 8.95925 22.4518 7.50012C22.4518 6.04098 21.872 4.64164 20.84 3.61012Z" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -559,7 +559,7 @@
 					</div>
 					<span>Избранное</span>
 				</a>
-				<a href="#">
+				<a href="personal_account.html">
 					<div class="svg_wrap">
 						<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M17 19V17C17 14.7909 15.2091 13 13 13H5C2.79086 13 1 14.7909 1 17V19" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -601,7 +601,7 @@
 						    <a class="nav-link" href="news.html">Новости</a>
 						</li>
 						<li class="nav-item">
-						    <a class="nav-link" href="#">Контакты</a>
+						    <a class="nav-link" href="contacts.html">Контакты</a>
 						</li>
 					</ul> 
 				</div>
@@ -667,7 +667,7 @@
 					    <a class="nav-link" href="news.html">Новости</a>
 					</li>
 					<li class="nav-item">
-					    <a class="nav-link" href="#">Контакты</a>
+					    <a class="nav-link" href="contacts.html">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -757,48 +757,213 @@
 		</div>
 	</aside>
 
-	<!-- <div class="modal fade" id="Modal_cb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">×</span>
-	        </button>
-	        <div class="row justify-content-center">
-	        	<div class="col-12 col-md-9 col-lg-8 col-xl-7">
-	        		<form action="" class="order_modal">
-					<h3>Оставить заявку на обратный звонок</h3>
-					<p class="f_12 fw_4 itlc d_blue text-center mb-4">Перезвоним Вам в ближайшее время!</p>
-					<div class="row justify-content-start">
-						<div class="col-12 col-sm-4 mb-3">
-							<p class="text-sm-right f_13 d_blue fw_5">Ваше имя*:</p>
-						</div>
-						<div class="col-12 col-sm-8 mb-3">
-							<input type="text" placeholder="Иванов Иван">
-						</div>
-						<div class="col-12 col-sm-4 mb-3">
-							<p class="text-sm-right f_13 d_blue fw_5">Телефон*:</p>
-						</div>
-						<div class="col-12 col-sm-8 mb-3">
-							<input type="text" placeholder="+7 (___) ___-__-__">
-						</div>
-						<div class="col-12 col-sm-4 mb-3">
-							<p class="text-sm-right f_13 d_blue fw_5">Коментарий:</p>
-						</div>
-						<div class="col-12 col-sm-8 mb-3">
-							<textarea rows="3" placeholder="Опишите всё, что посчитаете нужным"></textarea>
-						</div>
-						<div class="col-12 col-sm-8 offset-0 offset-sm-4">
-							<button type="submit" class="btn_main ls_2 f_13 ml-auto mr-auto">перезвоните мне</button>
-						</div>
+	<!-- Редактирование информация пользователя -->
+	<div class="modal fade" id="edit-info" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M23.6673 2.68325L21.3173 0.333252L12.0007 9.64992L2.68398 0.333252L0.333984 2.68325L9.65065 11.9999L0.333984 21.3166L2.68398 23.6666L12.0007 14.3499L21.3173 23.6666L23.6673 21.3166L14.3507 11.9999L23.6673 2.68325Z"/>
+					</svg>					
+				</button>
+				<h3 class="text-center fw_5">Редактировать данные</h3>
+				<form action="" class="f_09 mt-4">
+					<div class="fw_7 mb-2">Имя <span class="color-1">*</span></div>
+					<input type="text" placeholder="Имя" class="mb-3" required>
+					<div class="fw_7 mb-2">Фамилия <span class="color-1">*</span></div>
+					<input type="text" placeholder="Фамилия" class="mb-3" required>
+					<div class="fw_7 mb-2">Номер телефона <span class="color-1">*</span></div>
+					<input type="text" placeholder="+79000000000" class="mb-3" required>
+					<div class="fw_7 mb-2">Электронная почта <span class="color-1">*</span></div>
+					<input type="text" placeholder="e-mail" class="mb-3" required>
+					<div class="fw_7 mb-2">Город <span class="color-1">*</span></div>
+					<input type="text" placeholder="Казань" class="mb-3" required>
+					<div class="d-flex justify-content-center mt-3">
+						<button type="submit" class="btn_main btn-1 fw_7 f_11">Сохранить</button>
+						<button type="button" class="btn_main btn-3 fw_7 f_11 ml-3">Отменить</button>
 					</div>
-		</form>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div> -->
+				</form>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Изменить пароль -->
+	<div class="modal fade" id="edit-password" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.6673 2.68325L21.3173 0.333252L12.0007 9.64992L2.68398 0.333252L0.333984 2.68325L9.65065 11.9999L0.333984 21.3166L2.68398 23.6666L12.0007 14.3499L21.3173 23.6666L23.6673 21.3166L14.3507 11.9999L23.6673 2.68325Z"/>
+				</svg>					
+			</button>
+			<h3 class="text-center fw_5">Изменить пароль</h3>
+			<form action="" class="f_09 mt-4">
+				<div class="fw_7 mb-2">Текущий пароль <span class="color-1">*</span></div>
+				<input type="text" placeholder="Текущий пароль" class="mb-3" required>
+				<div class="fw_7 mb-2">Новый пароль <span class="color-1">*</span></div>
+				<input type="text" placeholder="Новый пароль" class="mb-3" required>
+				<div class="fw_7 mb-2">Повторите пароль <span class="color-1">*</span></div>
+				<input type="text" placeholder="Повторите пароль" class="mb-3" required>
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn_main btn-1 fw_7 f_11">Сохранить</button>
+					<button type="button" class="btn_main btn-3 fw_7 f_11 ml-3">Отменить</button>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- Добавить адрес -->
+	<div class="modal fade" id="add-address" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.6673 2.68325L21.3173 0.333252L12.0007 9.64992L2.68398 0.333252L0.333984 2.68325L9.65065 11.9999L0.333984 21.3166L2.68398 23.6666L12.0007 14.3499L21.3173 23.6666L23.6673 21.3166L14.3507 11.9999L23.6673 2.68325Z"/>
+				</svg>					
+			</button>
+			<h3 class="text-center fw_5">Добавить адрес</h3>
+			<form action="" class="f_09 mt-4">
+				<div class="fw_7 mb-2">Ваш город <span class="color-1">*</span></div>
+				<input type="text" placeholder="Ваш город" class="mb-3" required>
+				<div class="fw_7 mb-2">Улица <span class="color-1">*</span></div>
+				<input type="text" placeholder="Улица" class="mb-3" required>
+				<div class="fw_7 mb-2">Дом <span class="color-1">*</span></div>
+				<input type="text" placeholder="Дом" class="mb-3" required>
+				<div class="fw_7 mb-2">Квартира <span class="color-1">*</span></div>
+				<input type="text" placeholder="Квартира" class="mb-3" required>
+				<div class="fw_7 mb-2">Подъезд</div>
+				<input type="text" placeholder="Подъезд" class="mb-3">
+				<div class="fw_7 mb-2">Этаж</div>
+				<input type="text" placeholder="Этаж" class="mb-3">
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn_main btn-1 fw_7 f_11">Сохранить</button>
+					<button type="button" class="btn_main btn-3 fw_7 f_11 ml-3">Отменить</button>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- Редактировать адрес -->
+	<div class="modal fade" id="edit-address" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.6673 2.68325L21.3173 0.333252L12.0007 9.64992L2.68398 0.333252L0.333984 2.68325L9.65065 11.9999L0.333984 21.3166L2.68398 23.6666L12.0007 14.3499L21.3173 23.6666L23.6673 21.3166L14.3507 11.9999L23.6673 2.68325Z"/>
+				</svg>					
+			</button>
+			<h3 class="text-center fw_5">Редактировать адрес</h3>
+			<form action="" class="f_09 mt-4">
+				<div class="fw_7 mb-2">Ваш город <span class="color-1">*</span></div>
+				<input type="text" placeholder="Ваш город" value="Казань" class="mb-3" required>
+				<div class="fw_7 mb-2">Улица <span class="color-1">*</span></div>
+				<input type="text" placeholder="Улица" value="Юлиуса Фучика" class="mb-3" required>
+				<div class="fw_7 mb-2">Дом <span class="color-1">*</span></div>
+				<input type="text" placeholder="Дом" value="55" class="mb-3" required>
+				<div class="fw_7 mb-2">Квартира <span class="color-1">*</span></div>
+				<input type="text" placeholder="Квартира" class="mb-3" required>
+				<div class="fw_7 mb-2">Подъезд</div>
+				<input type="text" placeholder="Подъезд" class="mb-3">
+				<div class="fw_7 mb-2">Этаж</div>
+				<input type="text" placeholder="Этаж" class="mb-3">
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn_main btn-1 fw_7 f_11">Сохранить</button>
+					<button type="button" class="btn_main btn-3 fw_7 f_11 ml-3">Отменить</button>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- Добавить близкого -->
+	<div class="modal fade" id="add-close-people" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.6673 2.68325L21.3173 0.333252L12.0007 9.64992L2.68398 0.333252L0.333984 2.68325L9.65065 11.9999L0.333984 21.3166L2.68398 23.6666L12.0007 14.3499L21.3173 23.6666L23.6673 21.3166L14.3507 11.9999L23.6673 2.68325Z"/>
+				</svg>					
+			</button>
+			<h3 class="text-center fw_5">Добавить близкого</h3>
+			<form action="" class="f_09 mt-4">
+				<div class="fw_7 mb-2">Имя <span class="color-1">*</span></div>
+				<input type="text" placeholder="Имя" class="mb-3" required>
+				<div class="fw_7 mb-2">Дата рождения <span class="color-1">*</span></div>
+				<input type="date" class="mb-3" required>
+				<div class="fw_7 mb-2">Пол <span class="color-1">*</span></div>
+				<select name="" class="inp mb-3" required>
+					<option value="Не выбрано">Не выбрано</option>
+					<option value="">Мужской</option>
+					<option value="">Женский</option>
+				</select>
+				<div class="fw_7 mb-2">Кем приходится <span class="color-1">*</span></div>
+				<select name="" class="inp mb-3" required>
+					<option value="Не выбрано">Не выбрано</option>
+					<option value="">муж</option>
+					<option value="">жена</option>
+					<option value="">брат</option>
+					<option value="">сестра</option>
+					</select>
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn_main btn-1 fw_7 f_11">Сохранить</button>
+					<button type="button" class="btn_main btn-3 fw_7 f_11 ml-3">Отменить</button>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- Редактировать данные близкого -->
+	<div class="modal fade" id="edit-close-people" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M23.6673 2.68325L21.3173 0.333252L12.0007 9.64992L2.68398 0.333252L0.333984 2.68325L9.65065 11.9999L0.333984 21.3166L2.68398 23.6666L12.0007 14.3499L21.3173 23.6666L23.6673 21.3166L14.3507 11.9999L23.6673 2.68325Z"/>
+				</svg>					
+			</button>
+			<h3 class="text-center fw_5">Редактировать данные близкого</h3>
+			<form action="" class="f_09 mt-4">
+				<div class="fw_7 mb-2">Имя <span class="color-1">*</span></div>
+				<input type="text" placeholder="Имя" value="Ксения" class="mb-3" required>
+				<div class="fw_7 mb-2">Дата рождения <span class="color-1">*</span></div>
+				<input type="date" value="1988-03-25" class="mb-3" required>
+				<div class="fw_7 mb-2">Пол <span class="color-1">*</span></div>
+				<select name="" class="inp mb-3" required>
+					<option value="Не выбрано">Не выбрано</option>
+					<option value="">Мужской</option>
+					<option value="Женский" selected>Женский</option>
+				</select>
+				<div class="fw_7 mb-2">Кем приходится <span class="color-1">*</span></div>
+				<select name="" class="inp mb-3" required>
+					<option value="Не выбрано">Не выбрано</option>
+					<option value="">муж</option>
+					<option value="">жена</option>
+					<option value="">брат</option>
+					<option value="" selected>сестра</option>
+					</select>
+				<div class="d-flex justify-content-center mt-3">
+					<button type="submit" class="btn_main btn-1 fw_7 f_11">Сохранить</button>
+					<button type="button" class="btn_main btn-3 fw_7 f_11 ml-3">Отменить</button>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>
 
 	<!-- Skripts -->
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -806,6 +971,7 @@
 	<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
