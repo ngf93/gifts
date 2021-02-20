@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Подарки - Новости</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="sec_0" class="d-none d-md-block">
+		<div class="container d-flex justify-content-between align-items-center py-2">
+			<div class="d-flex flex-column flex-md-row f_09">
+				<div>
+					<span class="gray mr-2">Ваш город:</span>
+					<span>Казань</span>
+				</div>
+				<div class="d-flex mt-1 mt-md-0 ml-md-4">
+					<div class="icon-1 mr-2">
+						<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.5 0C1.565 0 0 1.565 0 3.5C0 6.125 3.5 10 3.5 10C3.5 10 7 6.125 7 3.5C7 1.565 5.435 0 3.5 0ZM3.5 4.75C2.81 4.75 2.25 4.19 2.25 3.5C2.25 2.81 2.81 2.25 3.5 2.25C4.19 2.25 4.75 2.81 4.75 3.5C4.75 4.19 4.19 4.75 3.5 4.75Z"/>
+						</svg>
+					</div>
+					<span class="gray">ул. Рашида Вагапова д.3</span>
+				</div>
+			</div>
+			<div class="d-flex flex-column flex-md-row align-items-center">
+				<button class="color-1 td_und ml-auto ml-md-unset mr-0 mr-md-4 mb-1 mb-md-0 f_09">Заказать звонок</button>
+				<a href="tel:+79172854275" class="fw_5">+7 (917) 285-42-75</a>
+			</div>
+		</div>
+	</section>
+
+	<header class="d-none d-md-block">
+		<div class="container py-3">
+			<div class="row align-items-center">
+				<div class="col-sm-6 col-md-3 d-flex">
+					<button class="navbar-toggler hamburger-2 d-block d-md-none mr-2" type="button" data-menu="menu-1" data-status="menu-hidden">
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<a href="index.html"><img src="images/logo.png" alt="Beautiful Day - Подарки, которые впечатляют" class="logo img-fluid"></a>
+				</div>
+				<div class="d-none d-md-block col-12 col-md-5 col-lg-6">
+					<form action="" class="form_search">
+						<input type="search" placeholder="Поиск по сайту">
+						<button type="submit" class="btn_main btn-1">Найти</button>
+					</form>
+				</div>
+				<div class="d-none d-sm-flex col-6 col-md-4 col-lg-3 justify-content-between align-items-center">
+					<button class="top_btn">
+						<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17 19V17C17 14.7909 15.2091 13 13 13H5C2.79086 13 1 14.7909 1 17V19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="f_09">Войти</div>
+					</button>
+					<button class="top_btn">
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M20.84 3.61012C19.8085 2.57811 18.4091 1.99829 16.95 1.99829C15.4909 1.99829 14.0915 2.57811 13.06 3.61012L12 4.67012L10.94 3.61012C8.79161 1.46173 5.30838 1.46173 3.16 3.61012C1.01161 5.7585 1.01161 9.24173 3.16 11.3901L4.22 12.4501L12 20.2301L19.78 12.4501L20.84 11.3901C21.872 10.3586 22.4518 8.95925 22.4518 7.50012C22.4518 6.04098 21.872 4.64164 20.84 3.61012Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="f_09">Избранное</div>
+						<span>10</span>
+					</button>
+					<button class="top_btn">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="f_09">Корзина</div>
+						<span>0</span>
+					</button>
+				</div>
+			</div>
+			<hr class="d-none d-md-block my-3">
+			<div class="d-none d-md-flex justify-content-between align-items-center">
+				<nav class="navbar navbar-expand-md">
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto mr-auto">
+							<li class="nav-item active">
+							    <a class="nav-link" href="catalog.html">Каталог</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="new_products.html">Новинки</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="#">Акции</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="delivery_payment.html">Доставка и оплата</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="delivery_payment.html">Возврат</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="news.html">Новости</a>
+							</li>
+							<li class="nav-item">
+							    <a class="nav-link" href="#">Контакты</a>
+							</li>
+						</ul> 
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- шапка для смартфонов -->
+	<header class="mobile d-block d-md-none">
+		<div class="container d-flex justify-content-between align-items-center">
+			<form action="" class="form_search">
+				<input type="search" placeholder="Поиск по сайту">
+				<button type="submit" class="btn_main btn-1">Найти</button>
+			</form>
+			<div class="d-flex justify-content-around align-items-center">
+				<a href="#" class="top_btn2">
+					<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M11 2C9.4087 2 7.88258 2.63214 6.75736 3.75736C5.63214 4.88258 5 6.4087 5 8V13C5 13.7082 4.81218 14.3971 4.46411 15H17.5359C17.1878 14.3971 17 13.7082 17 13V8C17 6.4087 16.3679 4.88258 15.2426 3.75736C14.1174 2.63214 12.5913 2 11 2ZM21 15C20.4696 15 19.9609 14.7893 19.5858 14.4142C19.2107 14.0391 19 13.5304 19 13V8C19 5.87827 18.1571 3.84344 16.6569 2.34315C15.1566 0.842855 13.1217 0 11 0C8.87827 0 6.84344 0.842855 5.34315 2.34315C3.84285 3.84344 3 5.87827 3 8V13C3 13.5304 2.78929 14.0391 2.41421 14.4142C2.03914 14.7893 1.53043 15 1 15C0.447715 15 0 15.4477 0 16C0 16.5523 0.447715 17 1 17H21V15ZM8.76823 19.135C9.24595 18.8579 9.85788 19.0205 10.135 19.4982C10.2229 19.6498 10.3491 19.7756 10.5009 19.863C10.6527 19.9504 10.8248 19.9965 11 19.9965C11.1752 19.9965 11.3473 19.9504 11.4991 19.863C11.6509 19.7756 11.7771 19.6498 11.865 19.4982C12.1421 19.0205 12.754 18.8579 13.2318 19.135C13.7095 19.4121 13.8721 20.024 13.595 20.5018C13.3313 20.9564 12.9528 21.3337 12.4973 21.5961C12.0419 21.8584 11.5256 21.9965 11 21.9965C10.4744 21.9965 9.95809 21.8584 9.50266 21.5961C9.04724 21.3337 8.66872 20.9564 8.405 20.5018C8.12788 20.024 8.2905 19.4121 8.76823 19.135Z" fill="#151515"/>
+					</svg>
+					<span>0</span>
+				</a>
+				<a href="#" class="top_btn">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<span>0</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section id="sec_1">
+		<a href="#"><img src="images/banner.jpg" alt="Подарки, которые впечатляют"></a>
+	</section>
+
+	<main>
+		<div class="container">
+			<nav aria-label="breadcrumb" class="my-5">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+			    <li class="breadcrumb-item"><a>Новости</a></li>
+			  </ol>
+			</nav>
+			
+			<section class="mb-5">
+				<h2>Новости недели</h2>
+				<div class="swiper_box">
+					<div class="swiper-6">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Как упаковать новогодний подарок</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Rerum laudantium qui, quidem aspernatur voluptatibus nulla et dicta inventore minima, assumenda, beatae ratione nemo ipsam voluptas ipsa nostrum consequuntur sequi deserunt.</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Как упаковать новогодний подарок</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Как упаковать новогодний подарок</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Как упаковать новогодний подарок</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Rerum laudantium qui, quidem aspernatur voluptatibus nulla et dicta inventore minima, assumenda, beatae ratione nemo ipsam voluptas ipsa nostrum consequuntur sequi deserunt.</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Как упаковать новогодний подарок</div>
+					        	</a>
+					        </div>
+					        <div class="swiper-slide">
+					        	<a href="news0.html" class="news_preview">
+					        		<img src="images/Rectangle 155.jpg" alt="">
+					        		<div class="mb-2">14.10.2020</div>
+					        		<div class="title">Как упаковать новогодний подарок</div>
+					        	</a>
+					        </div>
+					    </div>
+					    <div class="swiper-button-prev">
+					    	<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.0291 17.9694L5.57603 10.5001L13.0291 3.03082L10.7346 0.736328L0.970777 10.5001L10.7346 20.2639L13.0291 17.9694Z" fill="#C4C4C4"/>
+							</svg>
+					    </div>
+					    <div class="swiper-button-next">
+					    	<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.879395 18.0827L8.44559 10.4999L0.879395 2.91722L3.20873 0.587891L13.1208 10.4999L3.20873 20.412L0.879395 18.0827Z" fill="#C4C4C4"/>
+							</svg>
+					    </div>
+					</div>
+				</div>
+			</section>
+
+			<section id="sec_7" class="mb-5">
+				<h1>Новости компании</h1>
+				<div class="search_news mb-4">
+					<form action="" class="form_search">
+						<input type="search" placeholder="Поиск по сайту">
+						<button type="submit" class="btn_main btn-1">Найти</button>
+					</form>
+					<button type="button" class="btn_show_hashtags btn_main btn-4 mt-3 mt-md-0 ml-0 ml-md-4"></button>
+				</div>
+				<form action="" class="form_hashtags">
+					<div class="d-flex flex-wrap align-items-center">
+						<div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+						</div>
+						<div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштег">
+	                        <label>#хэштег</label>
+	                    </div>
+	                    <div class="checkbox_mini">
+	                        <input type="checkbox" name="hashtags[]" value="#хэштегподарки">
+	                        <label>#хэштегподарки</label>
+	                    </div>
+                    </div>
+				</form>
+				<div class="row mt-4">
+					<div class="col-lg-10 col-xl-8">
+						<div class="row news_preview2 mb-4">
+							<div class="col-sm-5">
+								<a href="news0.html"><img src="images/Rectangle 155.jpg" alt=""></a>
+							</div>
+							<div class="col-sm-7">
+								<div class="mb-2">14.10.2020</div>
+					        	<div class="title"><a href="news0.html">Как упаковать новогодний подарок</a></div>
+					        	<div class="text">
+					        		<p>Когда подарок выбран, осталось только красиво его преподнести. В этом вам поможет наша видеоинструкция и советы.</p>
+					        	</div>
+					        	<div class="mt-2 mt-sm-3 mt-md-4">
+					        		<span class="mr-3">#хэштегподарки</span>
+					        		<span class="mr-3">#хэштег</span>
+					        	</div>
+							</div>
+						</div>
+						<div class="row news_preview2 mb-4">
+							<div class="col-sm-5">
+								<a href="news0.html"><img src="images/Rectangle 155.jpg" alt=""></a>
+							</div>
+							<div class="col-sm-7">
+								<div class="mb-2">14.10.2020</div>
+					        	<div class="title"><a href="news0.html">Как упаковать новогодний подарок</a></div>
+					        	<div class="text">
+					        		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus alias, rem voluptates sequi, facilis et. Mollitia iusto commodi doloremque sapiente tempore corrupti rem vero, quaerat, praesentium sint unde modi ipsam.</p>
+					        	</div>
+					        	<div class="mt-2 mt-sm-3 mt-md-4">
+					        		<span class="mr-3">#хэштегподарки</span>
+					        		<span class="mr-3">#хэштег</span>
+					        	</div>
+							</div>
+						</div>
+						<div class="row news_preview2 mb-4">
+							<div class="col-sm-5">
+								<a href="news0.html"><img src="images/Rectangle 155.jpg" alt=""></a>
+							</div>
+							<div class="col-sm-7">
+								<div class="mb-2">14.10.2020</div>
+					        	<div class="title"><a href="news0.html">Как упаковать новогодний подарок</a></div>
+					        	<div class="text">
+					        		<p>Когда подарок выбран, осталось только красиво его преподнести. В этом вам поможет наша видеоинструкция и советы.</p>
+					        	</div>
+					        	<div class="mt-2 mt-sm-3 mt-md-4">
+					        		<span class="mr-3">#хэштегподарки</span>
+					        		<span class="mr-3">#хэштег</span>
+					        	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-nav">
+					<button class="btn_main btn-1 mb-4 mb-md-0 mr-md-4">Смотреть еще</button>
+					<nav>
+					  <ul class="pagination">
+					    <li class="page-item">
+					    	<a class="page-link" href="#">
+						    	<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.29956 14.2605L3.55163 8.5L9.29956 2.73953L7.53 0.969971L-3.14713e-05 8.5L7.53 16.03L9.29956 14.2605Z"/>
+								</svg>
+						    	<span class="ml-2">Назад</span>
+						    </a>
+						</li>
+					    <li class="page-item"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item"><a class="page-link" href="#">4</a></li>
+					    <li class="page-item">
+					    	<a class="page-link" href="#">
+					    		<span class="mr-2">Далее</span>
+					    		<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 14.2605L5.74793 8.5L0 2.73953L1.76956 0.969971L9.29959 8.5L1.76956 16.03L0 14.2605Z" fill="#DD4141"/>
+								</svg>
+					    	</a>
+					    </li>
+					  </ul>
+					</nav>
+				</div>
+			</section>
+
+			<section class="p-4 box_shad mb-5">
+				<div class="row align-items-center">
+					<div class="order-1 col-sm-6 col-lg-3 d-flex align-items-center justify-content-center justify-content-sm-start">
+						<img src="images/icons/find-gift.svg" alt="" width="50px">
+						<h4 class="text-left ml-2 ml-sm-4">Не нашли то, что нужно?</h4>
+					</div>
+					<div class="order-3 order-lg-2 col-lg-6 mt-2 mt-lg-0">
+						<p class="gray text-center text-lg-left">Ответьте на нескольк вопросов и мы предложим вам готовые страницы с подходящими вариантами.</p>
+					</div>
+					<div class="order-2 order-lg-3 col-sm-6 col-lg-3">
+						<button class="btn_main btn-1 fw_6 ml-auto mr-auto mr-sm-0 mt-2 mt-sm-0">
+							<span class="mr-2">Найти подарок</span>
+							<svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.346428 8.10831H20.2249L15.2027 2.8289L17.1807 0.755371L25.5979 9.5789L17.1807 18.4024L15.2027 16.3289L20.2249 11.0495H0.346428V8.10831Z" fill="white"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="d-none d-md-block">
+		<div class="container">
+			<div class="row">
+				<div class="order-1 col-6 col-md-3 mb-4 mb-md-0">
+					<a href="index.html"><img src="images/logo_white.png" alt="Beautiful Day - Подарки, которые впечатляют" class="img-fluid mb-4"></a>
+					<p class="white">Beautiful day © <span id="year"></span> - Подарки на все случаи жизни</p>
+				</div>
+				<div class="order-3 order-md-2 col-6 col-md-2 mb-4 mb-md-0">
+					<h5>Навигация</h5>
+					<nav class="">
+						<ul>
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="new_products.html">Новинки</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="delivery_payment.html">Доставка и оплата</a></li>
+							<li><a href="delivery_payment.html">Возврат товара</a></li>
+							<li><a href="new_products.html">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="order-4 order-md-3 col-6 col-md-4">
+					<h5>Мы в социальных сетях</h5>
+					<div class="d-flex mb-4">
+						<a href="#"><img src="images/icons/vk.png" alt=""></a>
+						<a href="#" class="ml-3"><img src="images/icons/instagram.png" alt=""></a>
+					</div>
+					<p>Подпишитесь на новостную рассылку, чтобы быть в курсе новинок, свежих акций и самых выгодных предложений:</p>
+					<form action="" class="mailing mt-4">
+						<input type="text" placeholder="E-mail">
+						<button type="submit" class="btn_main btn-1">
+							<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.279907 14.215L6.00491 8.47754L0.279907 2.74004L2.04241 0.977539L9.54241 8.47754L2.04241 15.9775L0.279907 14.215Z" fill="white"/>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="order-2 order-md-4 col-6 col-md-3">
+					<h5>Наши контакты</h5>
+					<div class="d-flex mb-3">
+						<div class="icon-1">
+							<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.5 0C1.565 0 0 1.565 0 3.5C0 6.125 3.5 10 3.5 10C3.5 10 7 6.125 7 3.5C7 1.565 5.435 0 3.5 0ZM3.5 4.75C2.81 4.75 2.25 4.19 2.25 3.5C2.25 2.81 2.81 2.25 3.5 2.25C4.19 2.25 4.75 2.81 4.75 3.5C4.75 4.19 4.19 4.75 3.5 4.75Z"/>
+							</svg>
+						</div>
+						<span class="ml-2">ул. Рашида Вагапова д.3</span>
+					</div>
+					<div class="d-flex mb-3">
+						<div class="icon-1">
+							<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.34 8.73087C10.52 8.73087 9.72667 8.59754 8.98667 8.35754C8.75333 8.27754 8.49333 8.33754 8.31333 8.51754L7.26667 9.83087C5.38 8.93087 3.61333 7.23087 2.67333 5.27754L3.97333 4.17087C4.15333 3.98421 4.20667 3.72421 4.13333 3.49087C3.88667 2.75087 3.76 1.95754 3.76 1.13754C3.76 0.777539 3.46 0.477539 3.1 0.477539H0.793333C0.433333 0.477539 0 0.637539 0 1.13754C0 7.33087 5.15333 12.4775 11.34 12.4775C11.8133 12.4775 12 12.0575 12 11.6909V9.39087C12 9.03087 11.7 8.73087 11.34 8.73087Z"/>
+							</svg>
+						</div>
+						<a href="tel:+79172854275" class="link ml-2">+7 (917) 285-42-75</a>
+					</div>
+					<div class="d-flex mb-3">
+						<div class="icon-1">
+							<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.8 0.52832H1.2C0.54 0.52832 0.00599999 1.08724 0.00599999 1.77037L0 9.22267C0 9.9058 0.54 10.4647 1.2 10.4647H10.8C11.46 10.4647 12 9.9058 12 9.22267V1.77037C12 1.08724 11.46 0.52832 10.8 0.52832ZM10.8 3.01242L6 6.11755L1.2 3.01242V1.77037L6 4.8755L10.8 1.77037V3.01242Z"/>
+							</svg>
+						</div>
+						<a href="mailto:eshop-gift@mail.ru" class="link ml-2">eshop-gift@mail.ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-4 d-flex justify-content-between align-items-center">
+			<div class="white"><span class="td_und"><a href="#" class="link">Политика конфиденциальности</a></span></div>
+			<a class="developers link" href="http://asmpromo.ru/" alt="Создание и продвижение сайтов" title="Создание и продвижение сайтов" target="_blanc">
+				<p>Создание и продвижение сайтов</p>
+				<img src="images/asm_white.png" alt="">
+			</a>
+		</div>
+	</footer>
+
+	<footer class="mobile d-block d-md-none">
+		<div class="container h-100">
+			<nav class="mobile_nav">
+				<a href="index.html" class="active-link">
+					<div class="svg_wrap">
+						<svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 8.62508L10.5 1.91675L19.125 8.62508V19.1667C19.125 20.2253 18.2669 21.0834 17.2083 21.0834H3.79167C2.73312 21.0834 1.875 20.2253 1.875 19.1667V8.62508Z" stroke="#151515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M7.625 21.0833V11.5H13.375V21.0833" stroke="#151515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					<span>Главная</span>
+				</a>
+				<a href="catalog.html">
+					<div class="svg_wrap">
+						<svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 8.5332H14.3333" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M1 1.06665H19.6667" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M1 16H19.6667" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M23.25 14.0001C26.2416 14.0001 28.6667 11.575 28.6667 8.58341C28.6667 5.59187 26.2416 3.16675 23.25 3.16675C20.2585 3.16675 17.8334 5.59187 17.8334 8.58341C17.8334 11.575 20.2585 14.0001 23.25 14.0001Z" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M30.8335 16.1667L27.0779 12.4111" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					<span>Каталог</span>
+				</a>
+				<a href="#" class="central-link active">
+					<div class="central-icon">
+						<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.9953 0C10.2926 0 0 10.2926 0 22.9953C0 35.698 10.2926 45.9906 22.9953 45.9906C35.698 45.9906 45.9905 35.698 45.9905 22.9953C46 10.2926 35.698 0 22.9953 0ZM21.9745 39.2044H9.68769V26.9176H21.9745V39.2044ZM21.9745 20.4812V24.8761H7.63674V16.6817H19.9236H21.9745V20.4812ZM22.5227 15.1695C21.691 15.1695 21.0105 14.4985 21.0105 13.6573V13.5628C21.0105 13.2225 21.1239 12.9106 21.3129 12.6649C20.623 11.9655 17.0031 8.47791 15.4531 10.6517C13.7329 13.0713 19.3281 15.2924 19.3281 15.2924C9.98069 15.1979 12.1451 9.4136 14.1771 7.56113C16.2092 5.7181 17.1354 7.30594 17.1354 7.30594L21.6626 12.3152C21.9084 12.1451 22.2014 12.0505 22.5227 12.0505H23.7986C24.12 12.0505 24.413 12.1545 24.6587 12.3152L29.1859 7.30594C29.1859 7.30594 30.1122 5.7181 32.1442 7.56113C34.1763 9.40415 36.3407 15.1884 26.9932 15.2924C26.9932 15.2924 32.5885 13.0713 30.8683 10.6517C29.3183 8.46846 25.6984 11.956 25.0084 12.6649C25.1975 12.9201 25.3109 13.2225 25.3109 13.5628V13.6573C25.3109 14.489 24.6304 15.1695 23.7986 15.1695H22.5227ZM36.3123 39.3179H24.0255V27.031H36.3123V39.3179ZM38.3633 24.8667H24.0255V20.4718V16.6723H26.0764H38.3633V24.8667Z" fill="white"/>
+						</svg>
+					</div>
+				</a>
+				<a href="#">
+					<div class="svg_wrap">
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M20.84 3.61012C19.8085 2.57811 18.4091 1.99829 16.95 1.99829C15.4909 1.99829 14.0915 2.57811 13.06 3.61012L12 4.67012L10.94 3.61012C8.79161 1.46173 5.30838 1.46173 3.16 3.61012C1.01161 5.7585 1.01161 9.24173 3.16 11.3901L4.22 12.4501L12 20.2301L19.78 12.4501L20.84 11.3901C21.872 10.3586 22.4518 8.95925 22.4518 7.50012C22.4518 6.04098 21.872 4.64164 20.84 3.61012Z" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					<span>Избранное</span>
+				</a>
+				<a href="#">
+					<div class="svg_wrap">
+						<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17 19V17C17 14.7909 15.2091 13 13 13H5C2.79086 13 1 14.7909 1 17V19" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z" stroke="#7B8794" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					<span>Профиль</span>
+				</a>
+			</nav>
+		</div>
+	</footer>
+
+	<section class="header_sticky">
+		<div class="container d-flex justify-content-between align-items-center">
+			<nav class="navbar navbar-expand-lg">
+				<button class="navbar-toggler show-aside" data-target="#mobilemenu" type="button" data-menu="menu-2" data-status="menu-hidden">
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto mr-auto">
+						<li class="nav-item">
+						    <a class="nav-link" href="catalog.html">Каталог</a>
+						</li>
+						<li class="nav-item">
+						    <a class="nav-link" href="new_products.html">Новинки</a>
+						</li>
+						<li class="nav-item">
+						    <a class="nav-link" href="#">Акции</a>
+						</li>
+						<li class="nav-item">
+						    <a class="nav-link" href="delivery_payment.html">Доставка и оплата</a>
+						</li>
+						<li class="nav-item">
+						    <a class="nav-link" href="delivery_payment.html">Возврат</a>
+						</li>
+						<li class="nav-item">
+						    <a class="nav-link" href="news.html">Новости</a>
+						</li>
+						<li class="nav-item">
+						    <a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul> 
+				</div>
+			</nav>
+			<div>
+				<div><a href="tel:+79172854275" class="fw_5">+7 (917) 285-42-75</a></div>
+				<button class="color-1 td_und mr-0 ml-auto mt-1 f_09">обратный звонок</button>
+			</div>
+			<div class="d-none d-sm-flex justify-content-between align-items-center">
+				<button class="top_btn">
+					<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M17 19V17C17 14.7909 15.2091 13 13 13H5C2.79086 13 1 14.7909 1 17V19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<div class="f_09 d-none d-xl-block">Войти</div>
+				</button>
+				<button class="top_btn ml-3 ml-xl-4">
+					<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M20.84 3.61012C19.8085 2.57811 18.4091 1.99829 16.95 1.99829C15.4909 1.99829 14.0915 2.57811 13.06 3.61012L12 4.67012L10.94 3.61012C8.79161 1.46173 5.30838 1.46173 3.16 3.61012C1.01161 5.7585 1.01161 9.24173 3.16 11.3901L4.22 12.4501L12 20.2301L19.78 12.4501L20.84 11.3901C21.872 10.3586 22.4518 8.95925 22.4518 7.50012C22.4518 6.04098 21.872 4.64164 20.84 3.61012Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<div class="f_09 d-none d-xl-block">Избранное</div>
+					<span>10</span>
+				</button>
+				<button class="top_btn ml-3 ml-xl-4">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<div class="f_09 d-none d-xl-block">Корзина</div>
+					<span>0</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<aside id="mobilemenu">
+		<div class="container p-5 h-100 d-flex flex-column align-items-start justify-content-center position-relative">
+			<nav>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					    <a class="nav-link" href="index.html">Главная</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="new_products.html">Новинки</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="#">Акции</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="delivery_payment.html">Доставка и оплата</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="delivery_payment.html">Возврат</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="news.html">Новости</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" class="close-aside">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16 1.61143L14.3886 0L8 6.38857L1.61143 0L0 1.61143L6.38857 8L0 14.3886L1.61143 16L8 9.61143L14.3886 16L16 14.3886L9.61143 8L16 1.61143Z" fill="#323232"/>
+				</svg>
+			</button>
+		</div>
+	</aside>
+
+	<aside id="filter">
+		<div class="container h-100 p-4 position-relative">
+			<h3 class="fw_4">Фильтры</h3>
+			<hr class="mb-4">
+			
+			<div class="params-group mb-4">
+				<div class="params-group-title disable mb-3"><span class="f_11 fw_7">Цена,  ₽</span></div>
+				<div class="row">
+					<div class="col-6">
+						<div class="slider-range-inputs">
+							<span class="gray mr-2">от</span>
+							<input type="number" id="min-price" oninput="$('#slider-range').slider('values', 0, this.value);">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="slider-range-inputs">
+							<span class="gray mr-2">до</span>
+							<input type="number" id="max-price" oninput="$('#slider-range').slider('values', 1, this.value);">
+						</div>
+					</div>
+				</div>
+				<div id="slider-range"></div>
+			</div>
+
+			<div class="params-group mb-4">
+				<div class="params-group-title mb-3">
+					<span class="f_11 fw_7">Категории</span>
+					<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.41 0.589966L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L0 1.99997L1.41 0.589966Z" fill="#323232"/>
+					</svg>
+				</div>
+				<div class="params-list minimized">
+					<div class="checkbox2 mb-2">
+						<input type="checkbox" name="param-1" onchange="if(this.checked){$(this).parents('.checkbox2').addClass('checked')}else{$(this).parents('.checkbox2').removeClass('checked')}">
+						<label>Новый год</label>
+					</div>
+					<div class="checkbox2 mb-2">
+						<input type="checkbox" name="param-1" onchange="if(this.checked){$(this).parents('.checkbox2').addClass('checked')}else{$(this).parents('.checkbox2').removeClass('checked')}">
+						<label>День рождения</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="params-group mb-4">
+				<div class="params-group-title mb-3">
+					<span class="f_11 fw_7">Кому</span>
+					<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.41 0.589966L6 5.16997L10.59 0.589966L12 1.99997L6 7.99997L0 1.99997L1.41 0.589966Z" fill="#323232"/>
+					</svg>
+				</div>
+				<div class="params-list minimized">
+					<div class="checkbox2 mb-2">
+						<input type="checkbox" name="param-2" onchange="if(this.checked){$(this).parents('.checkbox2').addClass('checked')}else{$(this).parents('.checkbox2').removeClass('checked')}">
+						<label>бабушке</label>
+					</div>
+					<div class="checkbox2 mb-2">
+						<input type="checkbox" name="param-2" onchange="if(this.checked){$(this).parents('.checkbox2').addClass('checked')}else{$(this).parents('.checkbox2').removeClass('checked')}">
+						<label>брату</label>
+					</div>
+					<div class="checkbox2 mb-2">
+						<input type="checkbox" name="param-2" onchange="if(this.checked){$(this).parents('.checkbox2').addClass('checked')}else{$(this).parents('.checkbox2').removeClass('checked')}">
+						<label>воспитателю</label>
+					</div>
+					<div class="checkbox2 mb-2">
+						<input type="checkbox" name="param-2" onchange="if(this.checked){$(this).parents('.checkbox2').addClass('checked')}else{$(this).parents('.checkbox2').removeClass('checked')}">
+						<label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ullam ipsam beatae maxime ut corporis laborum animi aliquid excepturi aut tempore nihil nobis reiciendis, ex eum cupiditate molestiae inventore rem!</label>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="close-aside">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16 1.61143L14.3886 0L8 6.38857L1.61143 0L0 1.61143L6.38857 8L0 14.3886L1.61143 16L8 9.61143L14.3886 16L16 14.3886L9.61143 8L16 1.61143Z" fill="#323232"/>
+				</svg>
+			</button>
+		</div>
+	</aside>
+
+	<!-- <div class="modal fade" id="Modal_cb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">×</span>
+	        </button>
+	        <div class="row justify-content-center">
+	        	<div class="col-12 col-md-9 col-lg-8 col-xl-7">
+	        		<form action="" class="order_modal">
+					<h3>Оставить заявку на обратный звонок</h3>
+					<p class="f_12 fw_4 itlc d_blue text-center mb-4">Перезвоним Вам в ближайшее время!</p>
+					<div class="row justify-content-start">
+						<div class="col-12 col-sm-4 mb-3">
+							<p class="text-sm-right f_13 d_blue fw_5">Ваше имя*:</p>
+						</div>
+						<div class="col-12 col-sm-8 mb-3">
+							<input type="text" placeholder="Иванов Иван">
+						</div>
+						<div class="col-12 col-sm-4 mb-3">
+							<p class="text-sm-right f_13 d_blue fw_5">Телефон*:</p>
+						</div>
+						<div class="col-12 col-sm-8 mb-3">
+							<input type="text" placeholder="+7 (___) ___-__-__">
+						</div>
+						<div class="col-12 col-sm-4 mb-3">
+							<p class="text-sm-right f_13 d_blue fw_5">Коментарий:</p>
+						</div>
+						<div class="col-12 col-sm-8 mb-3">
+							<textarea rows="3" placeholder="Опишите всё, что посчитаете нужным"></textarea>
+						</div>
+						<div class="col-12 col-sm-8 offset-0 offset-sm-4">
+							<button type="submit" class="btn_main ls_2 f_13 ml-auto mr-auto">перезвоните мне</button>
+						</div>
+					</div>
+		</form>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->
+
+	<!-- Skripts -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
