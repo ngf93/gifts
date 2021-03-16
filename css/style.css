@@ -258,6 +258,45 @@ aside {
 }
 
 
+/* subcategory */
+.subcategory {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+.subcategory img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.subcategory>div{
+  flex: 1;
+  text-align: left;
+}
+@media (max-width: 1199px){
+  .subcategory img {height: 210px;}
+}
+@media (max-width: 767px){
+  .subcategory {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .subcategory img {
+    width: 100px;
+    height: 70px;
+    margin-right: 1em;
+    border-radius: 0px;
+    margin-bottom: 0;
+  }
+}
+
 
 /*******
 #sec_3
@@ -819,7 +858,63 @@ MAP
 **********/
 #map {overflow: hidden;}
 
-/* Подвал */
+
+/**********
+#sec_15
+**********/
+#sec_15 {
+  background: url(../images/bg/bg0.jpg) no-repeat center;
+  background-size: cover;
+  padding: 4em 0;
+}
+.offer_img_big {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+.offer_img_big img {
+  width: 100%;
+}
+.offer_img_big .marker.marker-sale {
+  font-size: 1em;
+  background-color: #DD4141;
+}
+.num {
+  color: #fff;
+  background-color: #DD4141;
+  font-size: 2em;
+  font-weight: 700;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  margin: 0 auto .5em;
+}
+@media (max-width: 767px){
+  .num {
+    font-size: 1.5em;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+  }
+}
+
+/**********
+#sec_16
+**********/
+.gift-set {
+  position: relative;
+  margin-bottom: 3em;
+}
+.gift-set img {
+  width: 100%;
+}
+
+/***********************
+ FOOTER 
+************************/
 footer {
   background-color: #262D33;
   color: #fff;
