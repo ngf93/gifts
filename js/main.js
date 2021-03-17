@@ -126,6 +126,16 @@ $(document).ready( function() {
 });
 
 
+/* gifts set */
+$(document).ready( function() {
+  $(".point").click(function() {
+    $(".point").removeClass('clicked');
+    $('.point-product').hide();
+    $(this).addClass('clicked');
+    $(this).children('.point-product').show();
+  });
+});
+
 
 /********** 
 SLIDERS 
