@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Подарки - Вход в личный кабинет</title>
+  <title>Подарки - бонусная карта</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -206,30 +206,23 @@
 
 	<main>
 		<div class="container">
-			<nav aria-label="breadcrumb" class="my-5">
-			  <ol class="breadcrumb">
-			    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-			    <li class="breadcrumb-item"><a>Вход</a></li>
-			  </ol>
-			</nav>
-
-			<section class="mb-5">
-				<h1 class="text-center mb-5">Вход в личный кабинет</h1>
-				<div class="row justify-content-center">
-					<div class="col-md-8 col-lg-6">
-						<form action="" class="f_09">
-							<div class="fw_7 mb-2">Электронная почта <span class="color-1">*</span></div>
-							<input type="text" placeholder="Электронная почта" class="mb-3">
-							<div class="fw_7 mb-2">Пароль <span class="color-1">*</span></div>
-							<input type="text" placeholder="Пароль" class="mb-4">
-							<div class="d-flex justify-content-center align-items-center mb-3">
-								<button type="submit" class="btn_main btn-1 fw_7 mr-3">Войти</button>
-								<span class="blue fw_5"><a href="password.html">Забыли пароль?</a></span>
-							</div>
-							<div class="text-center">
-								У вас еще нет аккаунта? <span class="color-1 td_und"><a href="registration.html" >Регистация</a></span>
-							</div>
-						</form>
+			<section class="py-5">
+				<div class="row">
+					<div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+						<div class="bonus-card mx-auto">
+							<img src="images/bonus-card.png" alt="">
+							<div class="discount"><span class="f_13 mr-sm-1">2</span>%</div>
+							<div class="bonus-points">0 баллов</div>
+						</div>
+						<button class="btn_main btn-1 mt-2 f_09 fw_5 mx-auto">Активировать карту</button>
+					</div>
+					<div class="col-md-6 col-lg-7">
+						<div class="f_13 fw_7 mb-4">Данные карты</div>
+						<img src="images/code.png" alt="" class="img-fluid">
+						<div class="mt-4 mb-1">Номер карты</div>
+						<div class="gray f_09">123456789123456</div>
+						<div class="mt-4">Статус карты</div>
+						<div class="gray f_09">Скидка по карте 2%</div>
 					</div>
 				</div>
 			</section>

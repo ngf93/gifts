@@ -136,6 +136,19 @@ $(document).ready( function() {
   });
 });
 
+if (window.matchMedia("(min-width: 768px)").matches) {
+  /** shopping cart preview **/
+  $(function() {
+    $(".toggle-cart").mouseenter(function() {
+      $('.cart-preview').show();
+    });
+    $(".toggle-cart").mouseleave(function() {
+      $('.cart-preview').hide();
+    });
+  });
+}
+
+
 
 /********** 
 SLIDERS 
@@ -143,7 +156,7 @@ SLIDERS
 var mySwiper1 = new Swiper('.swiper-4', {
   loop: true,
   slidesPerView: 2,
-  spaceBetween: 10,
+  spaceBetween: 5,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -171,7 +184,7 @@ var mySwiper1 = new Swiper('.swiper-4', {
 var mySwiper2 = new Swiper('.swiper-4-mini', {
   loop: true,
   slidesPerView: 2,
-  spaceBetween: 10,
+  spaceBetween: 5,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -191,7 +204,7 @@ var mySwiper2 = new Swiper('.swiper-4-mini', {
 var mySwiper3 = new Swiper('.swiper-6', {
   loop: false,
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 5,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -199,7 +212,7 @@ var mySwiper3 = new Swiper('.swiper-6', {
   breakpoints: {
     576: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 10
     },
     768: {
       slidesPerView: 4,
@@ -217,7 +230,7 @@ var mySwiper3 = new Swiper('.swiper-6', {
 });
 
 var mySwiper4 = new Swiper('.galleryThumbs', {
-  spaceBetween: 10,
+  spaceBetween: 5,
   slidesPerView: 4,
   freeMode: true,
   loop: true,
@@ -225,6 +238,12 @@ var mySwiper4 = new Swiper('.galleryThumbs', {
   loopedSlides: 5,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    }
+  }
 });
 
 var mySwiper5 = new Swiper('.gallery', {

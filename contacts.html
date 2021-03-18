@@ -71,15 +71,74 @@
 						<div class="f_09">Избранное</div>
 						<span>10</span>
 					</a>
-					<a href="cart.html" class="top_btn">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-						<div class="f_09">Корзина</div>
-						<span>0</span>
-					</a>
+					<div class="position-relative toggle-cart">
+						<a href="cart.html" class="top_btn">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<div class="f_09">Корзина</div>
+							<span>0</span>
+						</a>
+						<div class="cart-preview toggle-cart">
+							<form action="">
+								<div class="table-responsive">
+									<table class="table table-borderless table-sm">
+										<tbody>
+											<tr>
+												<td>
+													<img src="images/products/3.jpg" alt="">
+												</td>
+												<td>
+													<div class="name">Термостакан «Любимая подруга. Цветы», 350 мл</div>
+												</td>
+												<td>
+													<div class="f_08">14шт</div>
+												</td>
+												<td>
+													<div class="fw_5 f_08">1250 ₽</div>
+												</td>
+												<td>
+													<button class="">
+														<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" fill="#606060"/>
+														</svg>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<img src="images/products/3.jpg" alt="">
+												</td>
+												<td>
+													<div class="name">Термостакан «Любимая подруга. Цветы», 350 мл</div>
+												</td>
+												<td>
+													<div class="info">14шт</div>
+												</td>
+												<td>
+													<div class="fw_5 info">1250 ₽</div>
+												</td>
+												<td>
+													<button class="">
+														<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" fill="#606060"/>
+														</svg>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="f_09 fw_7 my-3 text-left">Итого: 35 000 ₽</div>
+								<div class="d-flex">
+									<a href="cart.html" class="btn_main btn-4 f_08">Смотреть корзину</a>
+									<button class="btn_main btn-1 f_08 ml-2">Заказать</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 			<hr class="d-none d-md-block my-3">
@@ -308,7 +367,7 @@
 					</div>
 					<span>Каталог</span>
 				</a>
-				<a href="#" class="central-link active">
+				<a href="bonus-card.html" class="central-link active">
 					<div class="central-icon">
 						<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M22.9953 0C10.2926 0 0 10.2926 0 22.9953C0 35.698 10.2926 45.9906 22.9953 45.9906C35.698 45.9906 45.9905 35.698 45.9905 22.9953C46 10.2926 35.698 0 22.9953 0ZM21.9745 39.2044H9.68769V26.9176H21.9745V39.2044ZM21.9745 20.4812V24.8761H7.63674V16.6817H19.9236H21.9745V20.4812ZM22.5227 15.1695C21.691 15.1695 21.0105 14.4985 21.0105 13.6573V13.5628C21.0105 13.2225 21.1239 12.9106 21.3129 12.6649C20.623 11.9655 17.0031 8.47791 15.4531 10.6517C13.7329 13.0713 19.3281 15.2924 19.3281 15.2924C9.98069 15.1979 12.1451 9.4136 14.1771 7.56113C16.2092 5.7181 17.1354 7.30594 17.1354 7.30594L21.6626 12.3152C21.9084 12.1451 22.2014 12.0505 22.5227 12.0505H23.7986C24.12 12.0505 24.413 12.1545 24.6587 12.3152L29.1859 7.30594C29.1859 7.30594 30.1122 5.7181 32.1442 7.56113C34.1763 9.40415 36.3407 15.1884 26.9932 15.2924C26.9932 15.2924 32.5885 13.0713 30.8683 10.6517C29.3183 8.46846 25.6984 11.956 25.0084 12.6649C25.1975 12.9201 25.3109 13.2225 25.3109 13.5628V13.6573C25.3109 14.489 24.6304 15.1695 23.7986 15.1695H22.5227ZM36.3123 39.3179H24.0255V27.031H36.3123V39.3179ZM38.3633 24.8667H24.0255V20.4718V16.6723H26.0764H38.3633V24.8667Z" fill="white"/>
