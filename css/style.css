@@ -436,16 +436,28 @@ aside {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.marker-new, .marker-sale, .marker-discount {
   color: #fff;
   font-size: .85em;
   padding: .5em;
   border-bottom-right-radius: 10px;
-  min-width: 100px;
+  min-width: 90px;
   text-align: center;
-  z-index: 20;
 }
-.marker.marker-new {background-color: #25AB97;}
-.marker.marker-sale {background-color: #6F3DFF;}
+.marker-new {background-color: #25AB97;}
+.marker-sale {background-color: #6F3DFF;}
+.marker-discount {
+  background-color: #2F80ED;
+  min-width: 50px;
+  font-weight: 500;
+}
+.marker-discount span:last-child {margin-left: 2px;}
 .product .text {padding: .75em;}
 .product .price {
   font-size: 1.2em;

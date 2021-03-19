@@ -207,10 +207,10 @@
 	<main>
 		<div class="container">
 			<nav aria-label="breadcrumb" class="my-5">
-			  <ol class="breadcrumb">
-			    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-			    <li class="breadcrumb-item"><a>Каталог</a></li>
-			  </ol>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+					<li class="breadcrumb-item"><a>Каталог</a></li>
+				</ol>
 			</nav>
 			
 			<section class="mb-5">
@@ -246,7 +246,9 @@
 					<div class="col-6 col-sm-4 col-lg-3 mb-4">
 						<div class="product">
 			        		<a href="product.html"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-new">Новинка</div>
+			        		<div class="marker">
+								<div class="marker-new">Новинка</div>
+							</div>
 			        		<div class="text">
 			        			<div class="price">
 			        				<span>80 ₽</span>
@@ -281,8 +283,126 @@
 					</div>
 					<div class="col-6 col-sm-4 col-lg-3 mb-4">
 						<div class="product">
+							<a href="#"><img src="images/products/2.jpg"></a>
+							<div class="marker">
+								<div class="marker-sale">Акция</div>
+								<div class="marker-new">Новинка</div>
+								<div class="marker-discount"><span>-15</span><span>%</span></div>
+							</div>
+			        		<div class="text">
+			        			<div class="price">
+			        				<span>80 ₽</span>
+			        				<div class="checkbox_compare d-block d-md-none ml-2 ml-xl-3">
+	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
+	                                </div>
+			        			</div>
+			        			<div class="title"><a href="#">Термостакан со вставкой "Эспрессо Патронум", 350 мл</a></div>
+			        			<div class="product_btns">
+				        			<div class="toggle-form-addToCart">
+	                                    <div class="quantity-block">
+	                                        <button type="button" class="quantity-arrow-minus">
+	                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14 2.00024H0V0.000244141H14V2.00024Z"/>
+												</svg>
+	                                        </button>
+	                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
+	                                        <button type="button" class="quantity-arrow-plus">
+	                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M13.0059 8H7.48585V14H5.64585V8H0.125854V6H5.64585V0H7.48585V6H13.0059V8Z"/>
+												</svg>
+	                                        </button>
+	                                    </div>
+	                                	<button type="button" class="addToCart btn_main btn-1" onclick="$(this).prev('.quantity-block').css('margin-top', '0px'); $(this).parents('.product').addClass('product_added')">В корзину</button>
+	                                </div>
+	                                <div class="d-none d-md-block checkbox_compare ml-2 ml-xl-3">
+	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
+	                                </div>
+	                            </div>
+			        		</div>
+			        	</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-3 mb-4">
+						<div class="product">
+							<a href="#"><img src="images/products/2.jpg"></a>
+							<div class="marker">
+								<div class="marker-discount"><span>-15</span><span>%</span></div>
+							</div>
+			        		<div class="text">
+			        			<div class="price">
+			        				<span>80 ₽</span>
+			        				<div class="checkbox_compare d-block d-md-none ml-2 ml-xl-3">
+	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
+	                                </div>
+			        			</div>
+			        			<div class="title"><a href="#">Термостакан со вставкой "Эспрессо Патронум", 350 мл</a></div>
+			        			<div class="product_btns">
+				        			<div class="toggle-form-addToCart">
+	                                    <div class="quantity-block">
+	                                        <button type="button" class="quantity-arrow-minus">
+	                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14 2.00024H0V0.000244141H14V2.00024Z"/>
+												</svg>
+	                                        </button>
+	                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
+	                                        <button type="button" class="quantity-arrow-plus">
+	                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M13.0059 8H7.48585V14H5.64585V8H0.125854V6H5.64585V0H7.48585V6H13.0059V8Z"/>
+												</svg>
+	                                        </button>
+	                                    </div>
+	                                	<button type="button" class="addToCart btn_main btn-1" onclick="$(this).prev('.quantity-block').css('margin-top', '0px'); $(this).parents('.product').addClass('product_added')">В корзину</button>
+	                                </div>
+	                                <div class="d-none d-md-block checkbox_compare ml-2 ml-xl-3">
+	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
+	                                </div>
+	                            </div>
+			        		</div>
+			        	</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-3 mb-4">
+						<div class="product">
 			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-sale">Акция</div>
+							<div class="marker">
+								<div class="marker-new">Новинка</div>
+							</div>
+			        		<div class="text">
+			        			<div class="price">
+			        				<span>80 ₽</span>
+			        				<div class="checkbox_compare d-block d-md-none ml-2 ml-xl-3">
+	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
+	                                </div>
+			        			</div>
+			        			<div class="title"><a href="#">Термостакан со вставкой "Эспрессо Патронум", 350 мл</a></div>
+			        			<div class="product_btns">
+				        			<div class="toggle-form-addToCart">
+	                                    <div class="quantity-block">
+	                                        <button type="button" class="quantity-arrow-minus">
+	                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M14 2.00024H0V0.000244141H14V2.00024Z"/>
+												</svg>
+	                                        </button>
+	                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
+	                                        <button type="button" class="quantity-arrow-plus">
+	                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M13.0059 8H7.48585V14H5.64585V8H0.125854V6H5.64585V0H7.48585V6H13.0059V8Z"/>
+												</svg>
+	                                        </button>
+	                                    </div>
+	                                	<button type="button" class="addToCart btn_main btn-1" onclick="$(this).prev('.quantity-block').css('margin-top', '0px'); $(this).parents('.product').addClass('product_added')">В корзину</button>
+	                                </div>
+	                                <div class="d-none d-md-block checkbox_compare ml-2 ml-xl-3">
+	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
+	                                </div>
+	                            </div>
+			        		</div>
+			        	</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-3 mb-4">
+						<div class="product">
+			        		<a href="#"><img src="images/products/2.jpg"></a>
+							<div class="marker">
+								<div class="marker-sale">Акция</div>
+							</div>
 			        		<div class="text">
 			        			<div class="price">
 			        				<span>80 ₽</span>
@@ -353,7 +473,9 @@
 					<div class="col-6 col-sm-4 col-lg-3 mb-4">
 						<div class="product">
 			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-new">Новинка</div>
+							<div class="marker">
+								<div class="marker-new">Новинка</div>
+							</div>
 			        		<div class="text">
 			        			<div class="price">
 			        				<span>80 ₽</span>
@@ -389,114 +511,9 @@
 					<div class="col-6 col-sm-4 col-lg-3 mb-4">
 						<div class="product">
 			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-sale">Акция</div>
-			        		<div class="text">
-			        			<div class="price">
-			        				<span>80 ₽</span>
-			        				<div class="checkbox_compare d-block d-md-none ml-2 ml-xl-3">
-	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
-	                                </div>
-			        			</div>
-			        			<div class="title"><a href="#">Термостакан со вставкой "Эспрессо Патронум", 350 мл</a></div>
-			        			<div class="product_btns">
-				        			<div class="toggle-form-addToCart">
-	                                    <div class="quantity-block">
-	                                        <button type="button" class="quantity-arrow-minus">
-	                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M14 2.00024H0V0.000244141H14V2.00024Z"/>
-												</svg>
-	                                        </button>
-	                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
-	                                        <button type="button" class="quantity-arrow-plus">
-	                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.0059 8H7.48585V14H5.64585V8H0.125854V6H5.64585V0H7.48585V6H13.0059V8Z"/>
-												</svg>
-	                                        </button>
-	                                    </div>
-	                                	<button type="button" class="addToCart btn_main btn-1" onclick="$(this).prev('.quantity-block').css('margin-top', '0px'); $(this).parents('.product').addClass('product_added')">В корзину</button>
-	                                </div>
-	                                <div class="d-none d-md-block checkbox_compare ml-2 ml-xl-3">
-	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
-	                                </div>
-	                            </div>
-			        		</div>
-			        	</div>
-					</div>
-					<div class="col-6 col-sm-4 col-lg-3 mb-4">
-						<div class="product">
-			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="text">
-			        			<div class="price">
-			        				<span>80 ₽</span>
-			        				<div class="checkbox_compare d-block d-md-none ml-2 ml-xl-3">
-	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
-	                                </div>
-			        			</div>
-			        			<div class="title"><a href="#">Термостакан со вставкой "Эспрессо Патронум", 350 мл</a></div>
-			        			<div class="product_btns">
-				        			<div class="toggle-form-addToCart">
-	                                    <div class="quantity-block">
-	                                        <button type="button" class="quantity-arrow-minus">
-	                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M14 2.00024H0V0.000244141H14V2.00024Z"/>
-												</svg>
-	                                        </button>
-	                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
-	                                        <button type="button" class="quantity-arrow-plus">
-	                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.0059 8H7.48585V14H5.64585V8H0.125854V6H5.64585V0H7.48585V6H13.0059V8Z"/>
-												</svg>
-	                                        </button>
-	                                    </div>
-	                                	<button type="button" class="addToCart btn_main btn-1" onclick="$(this).prev('.quantity-block').css('margin-top', '0px'); $(this).parents('.product').addClass('product_added')">В корзину</button>
-	                                </div>
-	                                <div class="d-none d-md-block checkbox_compare ml-2 ml-xl-3">
-	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
-	                                </div>
-	                            </div>
-			        		</div>
-			        	</div>
-					</div>
-					<div class="col-6 col-sm-4 col-lg-3 mb-4">
-						<div class="product">
-			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-new">Новинка</div>
-			        		<div class="text">
-			        			<div class="price">
-			        				<span>80 ₽</span>
-			        				<div class="checkbox_compare d-block d-md-none ml-2 ml-xl-3">
-	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
-	                                </div>
-			        			</div>
-			        			<div class="title"><a href="#">Термостакан со вставкой "Эспрессо Патронум", 350 мл</a></div>
-			        			<div class="product_btns">
-				        			<div class="toggle-form-addToCart">
-	                                    <div class="quantity-block">
-	                                        <button type="button" class="quantity-arrow-minus">
-	                                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M14 2.00024H0V0.000244141H14V2.00024Z"/>
-												</svg>
-	                                        </button>
-	                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
-	                                        <button type="button" class="quantity-arrow-plus">
-	                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M13.0059 8H7.48585V14H5.64585V8H0.125854V6H5.64585V0H7.48585V6H13.0059V8Z"/>
-												</svg>
-	                                        </button>
-	                                    </div>
-	                                	<button type="button" class="addToCart btn_main btn-1" onclick="$(this).prev('.quantity-block').css('margin-top', '0px'); $(this).parents('.product').addClass('product_added')">В корзину</button>
-	                                </div>
-	                                <div class="d-none d-md-block checkbox_compare ml-2 ml-xl-3">
-	                                    <input type="checkbox" name="compare" onchange="if(this.checked){$(this).parents('.product').addClass('product_compared')}else{$(this).parents('.product').removeClass('product_compared')}">
-	                                </div>
-	                            </div>
-			        		</div>
-			        	</div>
-					</div>
-					<div class="col-6 col-sm-4 col-lg-3 mb-4">
-						<div class="product">
-			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-sale">Акция</div>
+							<div class="marker">
+								<div class="marker-sale">Акция</div>
+							</div>
 			        		<div class="text">
 			        			<div class="price">
 			        				<span>80 ₽</span>
@@ -567,7 +584,9 @@
 					<div class="col-6 col-sm-4 col-lg-3 mb-4">
 						<div class="product">
 			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-new">Новинка</div>
+							<div class="marker">
+								<div class="marker-new">Новинка</div>
+							</div>
 			        		<div class="text">
 			        			<div class="price">
 			        				<span>80 ₽</span>
@@ -603,7 +622,9 @@
 					<div class="col-6 col-sm-4 col-lg-3 mb-4">
 						<div class="product">
 			        		<a href="#"><img src="images/products/2.jpg"></a>
-			        		<div class="marker marker-sale">Акция</div>
+							<div class="marker">
+								<div class="marker-sale">Акция</div>
+							</div>
 			        		<div class="text">
 			        			<div class="price">
 			        				<span>80 ₽</span>
