@@ -1,6 +1,6 @@
-main {min-height: calc(100vh - 361px);}
+main {min-height: calc(100vh - 109px);}
 @media (min-width: 576px){
-  main {min-height: calc(100vh - 366px);}
+  main {min-height: calc(100vh - 116px);}
 }
 @media (min-width: 768px){
   main {min-height: calc(100vh - 756.22px);}
@@ -31,6 +31,7 @@ header.mobile {
   left: 0;
   width: 100%;
   z-index: 1000;
+  min-height: 45px;
 }
 
 .form_search {
@@ -1217,6 +1218,16 @@ footer.mobile {
 }
 
 
+
+.ya-share2__popup.ya-share2__popup_mobile.ya-share2__popup_visible .ya-share2__popup-content {
+  bottom: 64px !important;
+}
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
+ background-image: url(../images/icons/share-download.svg) !important;
+}
+.ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more.ya-share2__link_more-button-type_short {
+  background: transparent !important;
+}
 
 /* Шрифты */
 @font-face {
