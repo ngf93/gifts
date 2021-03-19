@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 :root {
   --color-1: #DD4141;
   --rgb-color-1: 221 65 65;
@@ -187,6 +189,7 @@ input[type="date"] {min-width: 100px;}
     height: .9em;
     border: 0 solid var(--color-font);
     border-width: 0 2px 2px 0;
+    transform: rotateZ(45deg);
     -webkit-transform: rotateZ(45deg);
     margin: .15em .3em;
 }
@@ -588,6 +591,7 @@ h6 {
     margin-bottom: 0;
 }
 
+.r-con {font-family: 'Roboto Condensed', sans-serif;}
 
 .f_08 {font-size: .8em;}
 .f_09 {font-size: .9em;}
@@ -625,6 +629,7 @@ h6 {
 .td_und {text-decoration: underline;}
 .td_lth {text-decoration: line-through;}
 .lh_n {line-height: normal;}
+.lh_1 {line-height: normal;}
 .bb_1 {border-bottom: 1px solid;}
 .t_ind {text-indent: 2rem;}
 
