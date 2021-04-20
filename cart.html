@@ -242,107 +242,132 @@
 			</section>
 
 			<section id="sec_12" class="mb-5">
-				<h1>Корзина</h1>
-				<div class="row">
+				<h1 class="d-none d-md-block">Корзина</h1>
+				<div class="row gx-0-mob">
 					<div class="col-lg-9 mb-4 mb-lg-0">
-						<div class="table-responsive cart-wrap">
-							<table class="table table-borderless cart">
-								<thead>
-									<tr>
-										<th></th>
-										<th>Наименование</th>
-										<th>Цена</th>
-										<th>Кол-во</th>
-										<th>Сумма</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<img src="images/products/3.jpg" alt="">
-										</td>
-										<td>
-											<div class="name">Термостакан «Любимая подруга. Цветы», 350 мл</div>
-										</td>
-										<td>
-											<div class="d-xl-flex align-items-center">
-												<div class="text-nowrap f_11">1299 ₽</div>
-												<del class="text-nowrap gray f_08 ml-xl-3">1300 ₽</del>
-											</div>
-										</td>
-										<td>
-											<div class="quantity-block-2">
-		                                        <button type="button" class="quantity-arrow-minus">
-		                                            <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M9.43396 1.57233H0V0H9.43396V1.57233Z"/>
-													</svg>
-		                                        </button>
-		                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
-		                                        <button type="button" class="quantity-arrow-plus">
-		                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M9.43396 5.39084H5.39084V9.43396H4.04313V5.39084H0V4.04313H4.04313V0H5.39084V4.04313H9.43396V5.39084Z"/>
-													</svg>
-		                                        </button>
-		                                    </div>
-										</td>
-										<td>
-											<div class="fw_7">598 ₽</div>
-										</td>
-										<td>
-											<button class="btn_remove">
-												<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M9.62439 0.7071L8.86523 0L0.514552 7.7781L1.2737 8.4852L9.62439 0.7071Z" fill="#FF4252"/>
-													<path d="M8.86488 8.48506L9.62402 7.77795L1.27342 -0.000234664L0.514276 0.706873L8.86488 8.48506Z" fill="#FF4252"/>
-												</svg>
+						<div class="cart-wrap">
+							<div class="cart-product d-none d-md-flex">
+								<div class="img"></div>
+								<div class="text">
+									<div class="fw_7">Наименование</div>
+								</div>
+								<div class="price">
+									<div class="fw_7">Цена</div>
+								</div>
+								<div class="amount">
+									<div class="fw_7">Кол-во</div>
+								</div>
+								<div class="sum">
+									<div class="fw_7">Сумма</div>
+								</div>
+								<div class="del">
+								</div>
+							</div>
+							<div class="cart-product">
+								<div class="img">
+									<img src="images/products/3.jpg">
+								</div>
+								<div class="text">
+									<div>Термостакан «Любимая подруга. Цветы», 350 мл</div>
+								</div>
+								<div class="half_2">
+									<div class="price">
+										<div class="text-nowrap f_11">500 ₽</div>
+										<del class="text-nowrap gray f_08 mr-2 mr-md-0">600 ₽</del>
+									</div>
+									<div class="amount">
+										<div class="bg-1 d-flex justify-content-center align-items-center py-2">
+											<button type="button">
+												<img src="images/icons/minus.svg" alt="">
 											</button>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="images/products/3.jpg" alt="">
-										</td>
-										<td>
-											<div class="name">Термостакан «Любимая подруга. Цветы», 350 мл</div>
-										</td>
-										<td>
-											<div class="d-xl-flex align-items-center">
-												<div class="text-nowrap f_11">1299 ₽</div>
-												<del class="text-nowrap gray f_08 ml-xl-3">1300 ₽</del>
-											</div>
-										</td>
-										<td>
-											<div class="quantity-block-2">
-		                                        <button type="button" class="quantity-arrow-minus">
-		                                            <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M9.43396 1.57233H0V0H9.43396V1.57233Z"/>
-													</svg>
-		                                        </button>
-		                                        <input type="number" class="quantity-num" placeholder="0" value="1" min="1">
-		                                        <button type="button" class="quantity-arrow-plus">
-		                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M9.43396 5.39084H5.39084V9.43396H4.04313V5.39084H0V4.04313H4.04313V0H5.39084V4.04313H9.43396V5.39084Z"/>
-													</svg>
-		                                        </button>
-		                                    </div>
-										</td>
-										<td>
-											<div class="fw_7">598 ₽</div>
-										</td>
-										<td>
-											<button class="btn_remove">
-												<svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M9.62439 0.7071L8.86523 0L0.514552 7.7781L1.2737 8.4852L9.62439 0.7071Z" fill="#FF4252"/>
-													<path d="M8.86488 8.48506L9.62402 7.77795L1.27342 -0.000234664L0.514276 0.706873L8.86488 8.48506Z" fill="#FF4252"/>
-												</svg>
+											<input type="number" placeholder="0" value="1">
+											<span>шт.</span>
+											<button type="button">
+												<img src="images/icons/plus.svg" alt="">
 											</button>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+										</div>
+									</div>
+									<div class="sum">
+										1000 ₽
+									</div>
+									<div class="del">
+										<button type="button" class="m-auto">
+											<img src="images/icons/close.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product">
+								<div class="img">
+									<img src="images/products/3.jpg">
+								</div>
+								<div class="text">
+									<div>Термостакан «Любимая подруга. Цветы», 350 мл</div>
+								</div>
+								<div class="half_2">
+									<div class="price">
+										<div class="text-nowrap f_11">500 ₽</div>
+										<del class="text-nowrap gray f_08 mr-2 mr-md-0">600 ₽</del>
+									</div>
+									<div class="amount">
+										<div class="bg-1 d-flex justify-content-center align-items-center py-2">
+											<button type="button">
+												<img src="images/icons/minus.svg" alt="">
+											</button>
+											<input type="number" placeholder="0" value="1">
+											<span>шт.</span>
+											<button type="button">
+												<img src="images/icons/plus.svg" alt="">
+											</button>
+										</div>
+									</div>
+									<div class="sum">
+										1000 ₽
+									</div>
+									<div class="del">
+										<button type="button" class="m-auto">
+											<img src="images/icons/close.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product">
+								<div class="img">
+									<img src="images/products/3.jpg">
+								</div>
+								<div class="text">
+									<div>Термостакан «Любимая подруга. Цветы», 350 мл</div>
+								</div>
+								<div class="half_2">
+									<div class="price">
+										<div class="text-nowrap f_11">500 ₽</div>
+										<del class="text-nowrap gray f_08 mr-2 mr-md-0">600 ₽</del>
+									</div>
+									<div class="amount">
+										<div class="bg-1 d-flex justify-content-center align-items-center py-2">
+											<button type="button">
+												<img src="images/icons/minus.svg" alt="">
+											</button>
+											<input type="number" placeholder="0" value="1">
+											<span>шт.</span>
+											<button type="button">
+												<img src="images/icons/plus.svg" alt="">
+											</button>
+										</div>
+									</div>
+									<div class="sum">
+										1000 ₽
+									</div>
+									<div class="del">
+										<button type="button" class="m-auto">
+											<img src="images/icons/close.svg" alt="">
+										</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="d-none d-md-block col-lg-3">
 						<div class="cart-wrap table-responsive">
 							<table class="table table-borderless cart">
 								<tbody>
@@ -590,6 +615,16 @@
 		</div>
 	</footer>
 
+	<footer class="mobile-cart d-block d-md-none">
+		<div class="container h-100 py-2 px-4">
+			<button type="button" class="btn_main btn-1 w-100 h-100 justify-content-between f_11 py-2 px-4">
+				<div class="fw_7">Оформить заказ</div>
+				<div>
+					<span class="fw_7 mr-1">1 470</span><span>руб.</span>
+				</div>
+			</button>
+		</div>
+	</footer>
 	<footer class="mobile d-block d-md-none">
 		<div class="container h-100">
 			<nav class="mobile_nav">

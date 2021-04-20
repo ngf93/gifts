@@ -60,6 +60,7 @@ hr.hr2 {
 .bg_main {background: linear-gradient(0deg, rgb(var(--color-2)) 0%, rgb(var(--color-2) / 0%) 252.32%);}
 .box_shad {box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 4px 30px rgba(0, 0, 0, 0.15);}
 
+
 .flex-1 {flex: 1;}
 
 /* FORMS CUSTOMIZATION */
@@ -850,9 +851,3 @@ ul.simple_list>li::before {
     }
 }
 
-
-/* Шрифты */
-/*@font-face {
-    font-family: 'coco';
-    src: url('../fonts/CocoBiker Regular-trial.ttf');
-}*/
